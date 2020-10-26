@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <link rel="stylesheet" href="./media/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <button onclick="loginFunction()"></button>
+    <div id="container1">
+      <div id="heading">
+        <div class="heading-function">
+          <svg width="26px" height="26px" viewBox="0 0 16 16" class="bi bi-cart-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+            <path fill-rule="evenodd" d="M11.354 5.646a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+          </svg>
+          <div class="login">
+            <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+            <div id="id01" class="modal">
+              
+              <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <img src="./media/img/IMG_4252.dng" alt="Avatar" class="avatar">
+                </div>
+            
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+            
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+                    
+                  <button type="submit">Login</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+            
+                <div class="loginContainer" style="background-color:#f1f1f1">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="menu">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
+              <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+            </svg>
+          </div>
+        </div>
+        
+        <span id="totalCardProduct" class="value">0</span>
+        <div class="w3-content w3-section">
+          <img class="mySlides" src="./media/img/unnamed (1).jpg">
+          <img class="mySlides" src="./media/img/diathan.jpg">
+          <img class="mySlides" src="./media/img/diathan2.jpg">
+        </div>
+      </div>
+      <div id="main">
+        <div id="sidebar" class="maincontent">
+          <div class="sidebarMenu">
+            <h3>MENU</h3>
+            <hr>
+            <ul><b><i>CD Nhạc Quốc Tế</i></b>
+              <hr>
+              <li>CD
+                <span>78</span>
+              </li>
+              <li>Gold CD
+                <span>20</span>
+              </li>
+              <li>SACD
+                <span>17</span>
+              </li>
+            </ul>
+            <ul><b><i>CD Nhạc Việt Nam</i></b>
+              <hr>
+              <li>Nhạc Vàng
+                <span>44</span>
+              </li>
+              <li>Nhạc Đỏ
+                <span>21</span>
+              </li>
+              <li>Nhạc Trữ Tình
+                <span>6</span>
+              </li>
+            </ul>
+            <ul><b><i>Xem Theo Thể Loại Nhạc</i></b>
+              <hr>
+              <li>Tổng hợp
+                <span>50</span>
+              </li>
+              <li>Kèn
+                <span>46</span>
+              </li>
+              <li>Trống và Bộ gõ
+                <span>77</span>
+              </li>
+              <li>Piano
+                <span>69</span>
+              </li>
+              <li>Guitar và Đàn Tranh
+                <span>22</span>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebarFilter">
+            <ul class="tab"> 
+              <h1>Danh sách sản phẩm</h1>
+              <li class="tab-item active" onclick="changeProductList('showList',this)">Tất cả</li>
+              <li class="tab-item" onclick="changeProductList('new',this)">Mới nhất</li>
+              <li class="tab-item" onclick="changeProductList('trend',this)">Phổ biến</li>
+              <li class="tab-item" onclick="changeProductList('caretory',this)">Bolero</li>
+            </ul>
+          </div>
+          <!-- <div class="sidebarSearh">
+            <h3>Hot Singer</h3>
+            <ul>
+              <li>Bằng Kiều</li>
+              <li>Duy Khánh</li>
+              <li>Bảo Yến</li>
+            </ul>
+            
+          </div> -->
+        </div>
+        <div id="product" class="maincontent">
+          <div class="container">
+           
+            <div id="showList" class="showList">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quis odit aspernatur numquam est maiores magnam tenetur nobis fuga nihil sunt praesentium neque ducimus, alias perferendis culpa voluptates in a.</div>
+            <div id="new" class="new"></div>
+            <div id="trend" class="trend"></div>
+            <div id="caretory" class="caretory"></div>
+            <div class="staMain">
+            <h3 style="color: darkgrey;">THỐNG KÊ SẢN PHẨM ĐƯỢC MUA</h3>
+            <p class="text">Nhạc Vàng</p>
+              <div class="statistical" style="text-align: center; width: 90%;height: 30px; background-color: #616161;color: white;">90%</div>
+            <p class="text">Nhạc Đỏ</p>
+              <div class="sta" style="text-align: center; width: 70%; height: 30px; background-color: #616161; color: white;">70%</div>
+            <p class="text">Nhạc Quốc Tế</p>
+              <div style="text-align: center; width: 30%; height: 30px; background-color: #616161; color: white;">30%</div>
+            </div>
+          </div>        </div>
+      </div>
+      
+      <div id="footer">
+          <footer class="ft">
+              <div class="gird">
+                  <div class="gird-row">
+                    <!-- <div class="gird-colum">
+                        <h3 class="ft-hd">CHĂM SÓC KHÁCH HÀNG</h3>
+                        <ul class="value">
+                          <li><a href="#">Trung tâm trợ giúp</a></li>
+                          <li><a href="#">Hướng dẫn mua hàng </a></li>
+                          <li><a href="#">Hỗ trợ</a></li>
+                        </ul>
+                    </div> -->
+                    <div class="gird-colum">
+                      <h3 class="ft-hd">GIỚI THIỆU VỀ NHÓM</h3>
+                      <ul>
+                        <li><a href="https://vnexpress.net/tim-hieu-ve-dia-than-1472411.html">Giới thiệu về đĩa than</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                        <li><a href="#">Điều khoản</a></li>
+                      </ul>
+                    </div>
+                    <div class="gird-colum">
+                      <h3 class="ft-hd">THEO GIÕI</h3>
+                      <ul>
+                        <li>
+                          <i class="fa fa-facebook-square" style="font-size:24px"><a href="https://www.facebook.com/groups/2369493293345886" style="font-size: 18px;">&emsp;Facebook</a></i>
+                        </li>
+                        <li>
+                          <i class="fa fa-instagram" style="font-size:20px"><a href="#">&emsp;Instagram</a></i>
+                        </li>
+                        <li>
+                          <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
+                          </svg>
+                          <a href="" style="font-size: 18px;">&emsp;033686868</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="gird-colum">
+                      <h3 class="ft-hd">ĐỊA CHỈ</h3>
+                      <ul>
+                        <li>
+                          <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                          </svg><a href="" style="font-size: 18px;">&emsp;22C-Thành Công</a>
+                        </li>
+                        <li>
+                          <svg width="1.3em" height="1.3em" viewBox="0 0 16 16" class="bi bi-signpost-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 1.414V4h2V1.414a1 1 0 0 0-2 0zM1 5a1 1 0 0 1 1-1h10.532a1 1 0 0 1 .768.36l1.933 2.32a.5.5 0 0 1 0 .64L13.3 9.64a1 1 0 0 1-.768.36H2a1 1 0 0 1-1-1V5zm6 5h2v6H7v-6z"/>
+                          </svg>
+                          <a style="font-size: 18px;" href="">Đường Nguyễn Chí Thanh, Quận Cầu Giấy, Hà Nội </a></li>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+          </footer>
+      </div>
+        <img src="./media/img/logo.png" class="im"/>
+    </div>
+    <footer class="footer">
+      <div class="gird-colum">
+        <h3 class="ft-hd">GIỚI THIỆU VỀ NHÓM</h3>
+        <ul>
+          <li><a href="https://vnexpress.net/tim-hieu-ve-dia-than-1472411.html">Giới thiệu về đĩa than</a></li>
+          <li><a href="#">Tuyển dụng</a></li>
+          <li><a href="#">Điều khoản</a></li>
+        </ul>
+      </div>
+      
+    </footer>
+    <script src="./media/JS/data.js"></script>
+    <script src="./media/JS/custom.js"></script>
+  </body>
+</html>
